@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>contact</title>
+        <link rel="stylesheet" href="portfolio.css">
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">About me</a></li>
+                <li>
+                    <a href="projects.html">Projecten</a>
+                    <ul class="dropdown">
+                        <li><a href="project1.html">Project 1</a></li>
+                        <li><a href="project2.html">Project 2</a></li>
+                    </ul>
+                </li>
+                <li><a href="interview.html">Interview</a></li>
+                <li class="active"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        
+        <form action="#">
+            <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="First name" required>
+            <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Last name" required>
+            <label for="email">Email</label>
+                <input type="email" name="Email" id="email" placeholder="Email" required >
+            <label for="Phone-number">Phone number</label>
+                <input type="tel" name="telefoon" id="Phone-number" placeholder="Phone number" required minlength="11" maxlength="14">
+            <label for="file">File</label>
+                <input type="file" id="file" name="file" placeholder="file">
+            <label for="Message">Message</label>
+                <textarea id="Message" name="Message" placeholder="Message" required spellcheck="true"></textarea>
+            <input type="submit" name="submit" id="SUB">
+        </form>
+
+        <footer>
+            <h3>Socials</h3>
+            <address>
+              <a href="https://github.com"><img src="img and mp4/github.png" alt="github" width="75px"></a>
+            </address>
+        </footer>
+    </body>
+</html>
