@@ -163,10 +163,7 @@ a{
 display: grid;
 grid-template-areas: 
 'article-grid article-grid image-1-grid'
-'article-grid article-grid image-1-grid'
 'article-grid article-grid image-2-grid'
-'article-grid article-grid image-2-grid'
-'article-grid article-grid image-3-grid'
 'article-grid article-grid image-3-grid';
 gap: 30px;
 padding: 30px;
