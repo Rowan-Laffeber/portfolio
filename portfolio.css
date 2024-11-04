@@ -209,6 +209,7 @@ form textarea{
   resize: vertical;
   width: auto;
   height: 175px;
+  max-height: 400px;
 }
 form input{
   width: 250px;
@@ -216,4 +217,13 @@ form input{
 form input[type=file]{
   max-width: fit-content;
   margin: 0px auto auto 0px;
+}
+
+address{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+}
+address a img{
+  padding: 10px;
 }
