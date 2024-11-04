@@ -49,6 +49,7 @@ button{
     background-color: rgb(100, 100, 100);
     display: inline-block;
     border-radius: 25px;
+    color: white;
   }
 
 video{
@@ -158,6 +159,7 @@ div.tegels{
   justify-items: center;
   margin: 50px auto;
 }
+
 a{
   text-decoration: none;
   color: white;
