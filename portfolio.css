@@ -112,6 +112,15 @@ footer h3{
   color: white
 }
 
+address{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+}
+address a img{
+  padding: 10px;
+}
+
 div.tegel{
 display: flex;
 flex-direction: row;
@@ -217,13 +226,4 @@ form input{
 form input[type=file]{
   max-width: fit-content;
   margin: 0px auto auto 0px;
-}
-
-address{
-  display:flex;
-  flex-direction: row;
-  justify-content: center;
-}
-address a img{
-  padding: 10px;
 }
