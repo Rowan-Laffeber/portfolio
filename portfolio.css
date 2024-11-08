@@ -123,6 +123,7 @@ footer{
   border: 1px solid black;
   width: 100%;
   position: relative;
+  margin-top: auto;
 }
 footer h2, footer p{
   color: white
