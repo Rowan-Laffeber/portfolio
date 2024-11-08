@@ -26,25 +26,11 @@
                 <li class="active"><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-
-        <h1>Contact</h1>
-        <h2>Neem contact met mij op via onderstaand formulier of the links in the footer.</h2>
-        <form action="bericht.html" method="post">
-            <label for="fname">First Name</label>
-                <input type="text" id="fname" name="firstname" placeholder="First name" required>
-            <label for="lname">Last Name</label>
-                <input type="text" id="lname" name="lastname" placeholder="Last name" required>
-            <label for="email">Email</label>
-                <input type="email" name="Email" id="email" placeholder="Email" required >
-            <label for="Phonenumber">Phone number</label>
-                <input type="tel" name="telefoon" id="Phonenumber" placeholder="Phone number" required minlength="11" maxlength="14">
-            <label for="Subject">Subject</label>
-                <input type="text" name="Subject" id="Subject" placeholder="Subject">
-            <label for="Message">Message</label>
-                <textarea id="Message" name="Message" placeholder="Message" required spellcheck="true"></textarea>
-            <input type="submit" name="submit" id="submit">
-        </form>
-
+        <article class="submit-contact">
+            <h1>Uw bericht is verstuurd.</h1>
+            <h2>Ik neem zo spoedig mogelijk contact met u op.</h2>
+            <p><a href="index.html"><button>home</button></a></p>
+        </article>
         <footer>
             <div class="footer-row">
               <div class="footer-1">
@@ -57,19 +43,19 @@
               <div class="footer-2">
                 <h2>Developed by</h2>
                 <div class="footer-box">
-                    <img src="img-and-mp4/pfp.png" alt="Rowan-Laffeber" width="75">
-                    <img src="img-and-mp4/ytg-pfp.png" alt="logo-YTG" width="75">
-                  </div>
-                </div>
-                <div class="footer-3">
-                  <h2>In collaboration with</h2>
-                  <div class="footer-box">
-                    <img src="img-and-mp4/mr-clean.png" alt="KelvinvdGaag" width="75">
-                    <img src="img-and-mp4/sultan-alladin.png" alt="Jachseva" width="75">
-                  </div>
+                  <img src="img-and-mp4/pfp.png" alt="Rowan-Laffeber" width="75">
+                  <img src="img-and-mp4/ytg-pfp.png" alt="logo-YTG" width="75">
                 </div>
               </div>
-              <p>Copyright &copy; 2024 R. Laffeber BV and YTG Inc.</p>
-          </footer>
+              <div class="footer-3">
+                <h2>In collaboration with</h2>
+                <div class="footer-box">
+                  <img src="img-and-mp4/mr-clean.png" alt="KelvinvdGaag" width="75">
+                  <img src="img-and-mp4/sultan-alladin.png" alt="Jachseva" width="75">
+                </div>
+              </div>
+            </div>
+            <p>Copyright &copy; 2024 R. Laffeber BV and YTG Inc.</p>
+        </footer>
     </body>
 </html>

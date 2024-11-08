@@ -1,19 +1,39 @@
+html{
+  scroll-behavior: smooth;
+}
 body{
   background-color: rgb(130, 60, 60);
   margin: 0;
   padding: 0;
-  margin-top: 100px;
+  margin-top: 75px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 
 h1,h2,h3,p{
   font-family: "sofia", sans-serif;
   text-align: center;
+
 }
 
-.center{
-  margin-left: auto;
-  margin-right: auto;
+div.table{
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  margin: 20px auto;
+  width: fit-content;
+  height: fit-content;
+  background-color: rgb(51, 51, 51);
+  border: 1px solid black;
+  border-radius: 25px;
+}
+table, th, td{
+  border: 1px solid rgb(255, 255, 255);
+  border-collapse: collapse;
+  padding: 10px;
+  color: white;
 }
 
 img {
@@ -33,21 +53,17 @@ video {
     
     border-radius: 50%;
   } 
-
 button{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    display: inline-block;
+    margin: 0px 10px;
     width: 150px;
     height: 50px;
-    padding: 8px;
     text-align: center;
     font-size: 16px;
     font-family: "sofia", sans-serif;
     font-weight: bold;
     cursor: pointer;
     background-color: rgb(100, 100, 100);
-    display: inline-block;
     border-radius: 25px;
     color: white;
   }
@@ -56,10 +72,12 @@ video{
   margin-bottom: 20px;
 }
 nav ul{
+  display: inline-block;
     list-style: none;
     background-color: rgb(51, 51, 51);
     border: 1px solid rgb(0, 0, 0);
     margin: 0;
+    margin-bottom: 50px;
     padding: 0;
     width: 100%;
     position: fixed;
@@ -103,14 +121,32 @@ footer{
   background-color: rgb(51, 51, 51);
   display: block;
   border: 1px solid black;
-  padding-bottom: 20px;
+  margin-top: auto;
 }
 footer address a{
   text-decoration: none;
   text-align: center;
 }
-footer h3{
+footer h2, footer p{
   color: white
+}
+.footer-box{
+  display: flex;
+  flex-direction: row;
+}
+.footer-box a img, .footer-box img{
+  margin: 15px;
+  border-radius: 15px;
+}
+
+.footer-1, .footer-2, .footer-3{
+  display: flex;
+  flex-direction: column;
+}
+.footer-row{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
 }
 
 address{
@@ -118,10 +154,6 @@ address{
   flex-direction: row;
   justify-content: center;
 }
-address a img{
-  padding: 10px;
-}
-
 div.tegel{
 display: flex;
 flex-direction: row;
@@ -146,6 +178,8 @@ div.column-text{
 .tegel-5{ grid-area: tegel-5;}
 .tegel-6{ grid-area: tegel-6;}
 
+
+
 div.tegels{
   display: grid;
   grid-template-areas: 
@@ -157,7 +191,7 @@ div.tegels{
   width: fit-content;
   height: auto;
   justify-items: center;
-  margin: 50px auto;
+  margin: 20px auto;
 }
 
 a{
@@ -169,6 +203,10 @@ a{
 .image-1-grid{grid-area: image-1-grid;}
 .image-2-grid{grid-area: image-2-grid;}
 .image-3-grid{grid-area: image-3-grid;}
+
+.image-1-grid, .image-2-grid, .image-3-grid{
+  border-radius: 15px;
+}
 
 .article-page{
 display: grid;
@@ -190,14 +228,17 @@ margin: 50px auto;
 .article-grid{
   display: flex;
   flex-direction: column;
-  max-width: auto;
+  max-width: fit-content;
   color: white;
+}
+.article-page h1, .article-page h2, .article-page h3, .article-page p{
+  text-align: left;
 }
 form{
   display: flex;
   flex-direction: column;
-  max-width: 500px;
-  margin: 100px auto;
+  width: 500px;
+  margin: 50px auto;
   background-color: rgb(51, 51, 51);
   padding: 30px;
   border-radius: 25px;
@@ -225,7 +266,9 @@ form textarea{
 form input{
   width: 250px;
 }
-form input[type=file]{
-  max-width: fit-content;
-  margin: 0px auto auto 0px;
+.submit-contact{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
 }
