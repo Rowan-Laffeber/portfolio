@@ -3,9 +3,8 @@ html{
 }
 body{
   background-color: rgb(130, 60, 60);
-  margin: 0;
+  margin: 4em 0em 0em 0em;
   padding: 0;
-  margin-top: 75px;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -15,24 +14,27 @@ body{
 h1,h2,h3,p{
   font-family: "sofia", sans-serif;
   text-align: center;
-
 }
 
-div.table{
+div.table-box{
   display: flex;
   justify-content: center;
-  padding: 30px;
-  margin: 20px auto;
+  flex-direction: column;
+  padding: 1em;
+  margin: 1em auto;
   width: fit-content;
   height: fit-content;
-  background-color: rgb(51, 51, 51);
+  background-color: rgb(17, 17, 17);
   border: 1px solid black;
-  border-radius: 25px;
+  border-radius: 1em;
+}
+div.table-box h2{
+  color: white;
 }
 table, th, td{
   border: 1px solid rgb(255, 255, 255);
   border-collapse: collapse;
-  padding: 10px;
+  padding: 0.25em;
   color: white;
 }
 
@@ -53,23 +55,22 @@ video {
     
     border-radius: 50%;
   } 
-button{
-    display: inline-block;
-    margin: 0px 10px;
-    width: 150px;
-    height: 50px;
-    text-align: center;
-    font-size: 16px;
-    font-family: "sofia", sans-serif;
-    font-weight: bold;
-    cursor: pointer;
-    background-color: rgb(100, 100, 100);
-    border-radius: 25px;
-    color: white;
+a.btn{
+  display: inline-block;
+  padding: 1em 2em;
+  margin: 1em;
+  border: 1px solid black;
+  border-radius: 1.5em;
+  background-color: rgb(100, 100, 100);
+  font-size: 1em;
+  color: white;
   }
+a.btn:hover{
+  background-color: rgb(51, 51, 51);
+}
 
 video{
-  margin-bottom: 20px;
+  margin-bottom: 1em;
 }
 nav ul{
   display: inline-block;
@@ -77,7 +78,6 @@ nav ul{
     background-color: rgb(51, 51, 51);
     border: 1px solid rgb(0, 0, 0);
     margin: 0;
-    margin-bottom: 50px;
     padding: 0;
     width: 100%;
     position: fixed;
@@ -91,11 +91,11 @@ nav ul li{
   }
 nav ul li a{
     display: inline-block;
-    padding: 14px 16px;
+    padding: 0.7em 0.8em;
     color: white;
     text-decoration: none;
     text-align: center;
-    font-size: 20px;
+    font-size: 1.25em;
   }
 nav ul li ul.dropdown li{
     display: block;
@@ -106,7 +106,7 @@ nav ul li ul.dropdown{
     position: absolute;
     z-index: auto;
     display: none;
-    margin-top: 50px;
+    margin-top: 3.125em;
   }
 nav ul li a:hover{
     background-color: rgb(17, 17, 17);
@@ -121,11 +121,8 @@ footer{
   background-color: rgb(51, 51, 51);
   display: block;
   border: 1px solid black;
-  margin-top: auto;
-}
-footer address a{
-  text-decoration: none;
-  text-align: center;
+  width: 100%;
+  position: relative;
 }
 footer h2, footer p{
   color: white
@@ -135,8 +132,8 @@ footer h2, footer p{
   flex-direction: row;
 }
 .footer-box a img, .footer-box img{
-  margin: 15px;
-  border-radius: 15px;
+  margin: 1em;
+  border-radius: 1em;
 }
 
 .footer-1, .footer-2, .footer-3{
@@ -157,11 +154,14 @@ address{
 div.tegel{
 display: flex;
 flex-direction: row;
-width: 300px;
-height: 175px;
+width: 18.75em;
+height: 11.25em;
 background-color: rgb(51, 51, 51);
-border-radius: 25px;
+border-radius: 1.5em;
 border: 1px solid black;
+}
+div.tegel:hover{
+  background-color: rgb(17, 17, 17);
 }
 div.column-text{
   display: flex;
@@ -186,12 +186,12 @@ div.tegels{
   'tegel-1 tegel-2'
   'tegel-3 tegel-4'
   'tegel-5 tegel-6';
-  gap: 30px;
-  padding: 0px;
+  gap: 2em;
+  padding: 0em;
   width: fit-content;
   height: auto;
   justify-items: center;
-  margin: 20px auto;
+  margin: 1.25em auto;
 }
 
 a{
@@ -205,7 +205,7 @@ a{
 .image-3-grid{grid-area: image-3-grid;}
 
 .image-1-grid, .image-2-grid, .image-3-grid{
-  border-radius: 15px;
+  border-radius: 1em;
 }
 
 .article-page{
@@ -214,16 +214,14 @@ grid-template-areas:
 'article-grid article-grid image-1-grid'
 'article-grid article-grid image-2-grid'
 'article-grid article-grid image-3-grid';
-gap: 30px;
-padding: 30px;
-width: 750px;
+gap: 2em;
+padding: 2em;
+width: 47.5em;
 height: auto;
-justify-items: center;
-align-items: center;
 background-color: rgb(51, 51, 51);
-border-radius: 25px;
+border-radius: 1.5em;
 border: 1px solid black;
-margin: 50px auto;
+margin: 2em auto;
 }
 .article-grid{
   display: flex;
@@ -237,38 +235,60 @@ margin: 50px auto;
 form{
   display: flex;
   flex-direction: column;
-  width: 500px;
-  margin: 50px auto;
+  width: 31.25em;
+  margin: 3em auto;
   background-color: rgb(51, 51, 51);
-  padding: 30px;
-  border-radius: 25px;
+  padding: 2em;
+  border-radius: 1.5em;
   border: 1px solid black;
 }
 form input, form textarea{
-  padding: 5px 10px;
-  border-radius: 5px;
+  padding: 0.3em 0.625em;
+  border-radius: 0.3em;
 }
 form label{
   color: white;
-  margin: 20px auto 5px 0px;
+  margin: 1.25em auto 0.25em 0em;
 }
 form input[type=submit]{
   max-width: fit-content;
-  margin:10px 0px auto auto;
+  margin:0.625em 0em auto auto;
 }
 
 form textarea{
   resize: vertical;
   width: auto;
-  height: 175px;
-  max-height: 400px;
+  height: 11.25em;
+  max-height: 25em;
 }
 form input{
-  width: 250px;
+  width: 16.25em;
 }
 .submit-contact{
   display: flex;
   justify-content: center;
   flex-direction: column;
   margin: auto;
+}
+
+.article-abme{grid-area: article-abme;}
+.table-box{grid-area: table-box;}
+.vid-abme{grid-area: vid-abme;}
+
+.grid-abme{
+  display: grid;
+  grid-template-areas:
+  'article-abme article-abme table-box'
+  'article-abme article-abme vid-abme';
+  gap: 2em;
+  padding: 2em;
+  width: 55em;
+  height: auto;
+  background-color: rgb(51, 51, 51);
+  border-radius: 1.5em;
+  border: 1px solid black;
+  margin: 2em auto;
+}
+.article-abme{
+  color: white;
 }
