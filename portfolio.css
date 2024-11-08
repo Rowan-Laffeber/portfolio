@@ -268,7 +268,12 @@ form input{
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin: auto;
+  margin: auto auto 3em auto;
+  background-color: rgb(51, 51, 51);
+  border: 1px solid black;
+  padding: 2em;
+  border-radius: 1.5em;
+  color: white;
 }
 
 .article-abme{grid-area: article-abme;}
