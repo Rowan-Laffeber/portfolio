@@ -2,7 +2,7 @@ html{
   scroll-behavior: smooth;
 }
 body{
-  background-color: rgb(130, 60, 60);
+  background-color: rgb(220, 90, 90);
   margin: 4em 0em 0em 0em;
   padding: 0;
   min-height: 100vh;
@@ -73,7 +73,8 @@ video{
   margin-bottom: 1em;
 }
 nav ul{
-  display: inline-block;
+  display: flex;
+  flex-direction: row;
     list-style: none;
     background-color: rgb(51, 51, 51);
     border: 1px solid rgb(0, 0, 0);
@@ -90,7 +91,8 @@ nav ul li{
     float: left;
   }
 nav ul li a{
-    display: inline-block;
+    display: flex;
+    flex-direction: row;
     padding: 0.7em 0.8em;
     color: white;
     text-decoration: none;
@@ -104,7 +106,7 @@ nav ul li ul.dropdown{
     width: 100%;
     background-color: rgb(51, 51, 51);
     position: absolute;
-    z-index: auto;
+    z-index: 1;
     display: none;
     margin-top: 3.125em;
   }
@@ -124,6 +126,7 @@ footer{
   width: 100%;
   position: relative;
   margin-top: auto;
+  z-index: 2;
 }
 footer h2, footer p{
   color: white
@@ -296,5 +299,57 @@ form input{
   margin: 2em auto;
 }
 .article-abme{
+  color: white;
+}
+/* cookies */
+.cookies{
+  width: 300px;
+  height: 300px;
+  margin: auto;
+  background-color: rgb(51, 51, 51);
+  border: 1px solid black;
+  position: fixed;
+  top: 50%;
+  margin-top: -150px;
+  left: 50%;
+  margin-left: -150px;
+  color: white;
+  border-radius: 1.5em;
+  line-height: 1.25em;
+  font-size: 1em;
+  padding: 0.3em;
+  z-index: 100;
+}
+.cookies h1{
+  color: white;
+  line-height: 1.25em;
+  font-size: 1.5em;
+  padding: 0.3em;
+}
+.cookies button{
+  background-color: black;
+  color: white;
+  line-height: 1.25em;
+  font-size: 1em;
+  padding: 0.3em;
+}
+/* light mode area from here */
+nav ul li.lightmode{
+  display: flex;
+  align-self: right;
+  margin-left: auto;
+  margin-right: 1em;
+  border-left: 1px solid rgb(100, 100, 100);
+  border-right: none;
+  padding-left: 1em;
+}
+nav ul li button.lightmode{
+  padding: 0;
+  margin: auto;
+  line-height: 1.25em;
+  font-size: 1em;
+}
+.light-mode{
+  background-color: rgb(13, 13, 57);
   color: white;
 }

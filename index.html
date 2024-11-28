@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta name="description" content="portfolio">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rowan Laffeber</title>
@@ -24,9 +25,10 @@
         </li>
         <li><a href="interview.html">Interview</a></li>
         <li><a href="contact.html">Contact</a></li>
+        <li class="lightmode"><button onclick="trigger_light_mode()" class="lightmode" id="light_mode">light mode</button></li>
       </ul>
     </nav>
-    <img class="pfp" src="img-and-mp4/pfp.png" alt="pfp" width="250">
+    <img class="pfp" src="img-and-mp4/pfp.png" alt="Profielfoto Rowan Laffeber" width="250">
       <article>
         <h1>Rowan Laffeber</h1>
         <h2>Welkom op mijn portfolio website</h2>
@@ -35,7 +37,7 @@
       <div class="tegels">
         <a href="portfolio.html" class="tegel-1">
           <div class="tegel">
-            <img src="img-and-mp4/placeholder-project-tegel.png" alt="tegel-afbeelding">
+            <img src="img-and-mp4/placeholder-project-tegel.png" alt="">
             <div class="column-text">
             <h3>Portfolio</h3>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -44,7 +46,7 @@
         </a>
         <a href="projects.html" class="tegel-2">
           <div class="tegel">
-            <img src="img-and-mp4/placeholder-project-tegel.png" alt="tegel-afbeelding">
+            <img src="img-and-mp4/placeholder-project-tegel.png" alt="">
             <div class="column-text">
             <h3>Projecten</h3>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -53,7 +55,7 @@
         </a>
         <a href="#" class="tegel-3">
           <div class="tegel">
-            <img src="img-and-mp4/placeholder-project-tegel.png" alt="tegel-afbeelding">
+            <img src="img-and-mp4/placeholder-project-tegel.png" alt="">
             <div class="column-text">
             <h3>lorem</h3>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -62,13 +64,19 @@
         </a>
         <a href="#" class="tegel-4">
           <div class="tegel">
-            <img src="img-and-mp4/placeholder-project-tegel.png" alt="tegel-afbeelding">
+            <img src="img-and-mp4/placeholder-project-tegel.png" alt="">
             <div class="column-text">
             <h3>lorem</h3>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
           </div>
         </a>
+    </div>
+    <div class="cookies" id="cookies">
+      <h1>Wilt u cookies gebruiken?</h1>
+      <p>bij het gebruik van cookies heeft u gepersonaliseerde advertenties, en verdien ik geld aan het verkopen van uw gegevens</p>
+      <button onclick="toggle_cookiewall()">ja</button>
+      <button onclick="toggle_cookiewall()">nee</button>
     </div>
     <footer>
     <div class="footer-row">
@@ -82,7 +90,7 @@
       <div class="footer-2">
         <h2>Developed by</h2>
         <div class="footer-box">
-          <img src="img-and-mp4/pfp.png" alt="Rowan-Laffeber" width="75">
+          <img src="img-and-mp4/pfp.png" alt="Rowan Laffeber" width="75">
           <img src="img-and-mp4/ytg-pfp.png" alt="logo-YTG" width="75">
         </div>
       </div>
@@ -96,5 +104,6 @@
     </div>
     <p>Copyright &copy; 2024 R. Laffeber BV and YTG Inc.</p>
 </footer>
+<script src="portfolio.js"></script>
   </body>
 </html>
