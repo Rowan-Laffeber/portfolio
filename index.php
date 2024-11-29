@@ -6,25 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rowan Laffeber</title>
     <link rel="stylesheet" href="portfolio.css">
+    <link id="color_mode" rel="stylesheet" href="portfolio-darkmode.css">
   </head>
   <body>
     <nav>
       <ul>
-        <li class="active"><a href="index.html">Home</a></li>
-        <li><a href="portfolio.html">About me</a></li>
+        <li class="active"><a href="index.php">Home</a></li>
+        <li><a href="portfolio.php">About me</a></li>
         <li>
-          <a href="projects.html">Projecten</a>
+          <a href="projects.php">Projecten</a>
           <ul class="dropdown">
-            <li><a href="project1.html">Project 1</a></li>
-            <li><a href="project2.html">Project 2</a></li>
-            <li><a href="project3.html">Project 3</a></li>
-            <li><a href="project4.html">Project 4</a></li>
-            <li><a href="project5.html">Project 5</a></li>
-            <li><a href="project6.html">Project 6</a></li>
+            <li><a href="project1.php">Project 1</a></li>
+            <li><a href="project2.php">Project 2</a></li>
+            <li><a href="project3.php">Project 3</a></li>
+            <li><a href="project4.php">Project 4</a></li>
+            <li><a href="project5.php">Project 5</a></li>
+            <li><a href="project6.php">Project 6</a></li>
           </ul>
         </li>
-        <li><a href="interview.html">Interview</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="interview.php">Interview</a></li>
+        <li><a href="contact.php">Contact</a></li>
         <li class="lightmode"><button onclick="trigger_light_mode()" class="lightmode" id="light_mode">light mode</button></li>
       </ul>
     </nav>
@@ -35,7 +36,7 @@
         <h2>Belangrijke links</h2>
       </article>
       <div class="tegels">
-        <a href="portfolio.html" class="tegel-1">
+        <a href="portfolio.php" class="tegel-1">
           <div class="tegel">
             <img src="img-and-mp4/placeholder-project-tegel.png" alt="">
             <div class="column-text">
@@ -44,7 +45,7 @@
             </div>
           </div>
         </a>
-        <a href="projects.html" class="tegel-2">
+        <a href="projects.php" class="tegel-2">
           <div class="tegel">
             <img src="img-and-mp4/placeholder-project-tegel.png" alt="">
             <div class="column-text">

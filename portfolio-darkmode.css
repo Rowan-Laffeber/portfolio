@@ -1,0 +1,107 @@
+body{
+  background-color: rgb(220, 90, 90);
+}
+
+div.table-box{
+  background-color: rgb(17, 17, 17);
+  border: 1px solid black;
+}
+div.table-box h2{
+  color: white;
+}
+table, th, td{
+  border: 1px solid rgb(255, 255, 255);
+  color: white;
+}
+
+a.btn{
+  border: 1px solid black;
+  background-color: rgb(100, 100, 100);
+  color: white;
+  }
+a.btn:hover{
+  background-color: rgb(51, 51, 51);
+}
+nav ul{
+    background-color: rgb(51, 51, 51);
+    border: 1px solid rgb(0, 0, 0);
+  } 
+nav ul li{
+    border-right: 1px solid rgb(100, 100, 100);
+  }
+nav ul li a{
+    color: white;
+  }
+nav ul li ul.dropdown{
+    background-color: rgb(51, 51, 51);
+  }
+nav ul li a:hover{
+    background-color: rgb(17, 17, 17);
+    }
+.active{
+    background-color: rgb(110, 30, 30);
+  }
+footer{
+  background-color: rgb(51, 51, 51);
+  border: 1px solid black;
+}
+footer h2, footer p{
+  color: white
+}
+div.tegel{
+background-color: rgb(51, 51, 51);
+border: 1px solid black;
+}
+div.tegel:hover{
+  background-color: rgb(17, 17, 17);
+}
+a{
+  color: white;
+}
+.article-page{
+background-color: rgb(51, 51, 51);
+border: 1px solid black;
+}
+.article-grid{
+  color: white;
+}
+form{
+  background-color: rgb(51, 51, 51);
+  border: 1px solid black;
+}
+form label{
+  color: white;
+}
+.submit-contact{
+  background-color: rgb(51, 51, 51);
+  border: 1px solid black;
+  color: white;
+}
+.grid-abme{
+  background-color: rgb(51, 51, 51);
+  border: 1px solid black;
+}
+.article-abme{
+  color: white;
+}
+/* cookies */
+.cookies{
+  background-color: rgb(51, 51, 51);
+  border: 1px solid black;
+  color: white;
+}
+.cookies h1{
+  color: white;
+}
+.cookies button{
+  background-color: black;
+  color: white;
+}
+/* light mode area from here */
+nav ul li.lightmode{
+  border-left: 1px solid rgb(100, 100, 100);
+}
+nav ul li button.lightmode{
+  background-color: rgb(155, 155, 155);
+  color: black;
+}

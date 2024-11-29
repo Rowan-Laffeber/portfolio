@@ -6,31 +6,33 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>projecten</title>
         <link rel="stylesheet" href="portfolio.css">
-    </head>
+        <link id="color_mode" rel="stylesheet" href="portfolio-darkmode.css">
+      </head>
     <body>
         <nav>
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="portfolio.html">About me</a></li>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="portfolio.php">About me</a></li>
             <li class="active">
-                <a href="projects.html">Projecten</a>
+                <a href="projects.php">Projecten</a>
                 <ul class="dropdown">
-                  <li><a href="project1.html">Project 1</a></li>
-                  <li><a href="project2.html">Project 2</a></li>
-                  <li><a href="project3.html">Project 3</a></li>
-                  <li><a href="project4.html">Project 4</a></li>
-                  <li><a href="project5.html">Project 5</a></li>
-                  <li><a href="project6.html">Project 6</a></li>
+                  <li><a href="project1.php">Project 1</a></li>
+                  <li><a href="project2.php">Project 2</a></li>
+                  <li><a href="project3.php">Project 3</a></li>
+                  <li><a href="project4.php">Project 4</a></li>
+                  <li><a href="project5.php">Project 5</a></li>
+                  <li><a href="project6.php">Project 6</a></li>
                 </ul>
             </li>
-            <li><a href="interview.html">Interview</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="interview.php">Interview</a></li>
+            <li><a href="contact.php">Contact</a></li>
+            <li class="lightmode"><button onclick="trigger_light_mode()" class="lightmode" id="light_mode">light mode</button></li>
         </ul>
         </nav>
         <h1>Projecten</h1>
         <h2>Door mij gemaakte projecten</h2>
         <div class="tegels">
-          <a href="project1.html" class="tegel-1">
+          <a href="project1.php" class="tegel-1">
             <div class="tegel">
               <img src="img-and-mp4/placeholder-project-tegel.png" alt="">
               <div class="column-text">
@@ -39,7 +41,7 @@
               </div>
             </div>
           </a>
-          <a href="project2.html" class="tegel-2">
+          <a href="project2.php" class="tegel-2">
             <div class="tegel">
               <img src="img-and-mp4/placeholder-project-tegel.png" alt="">
               <div class="column-text">
@@ -48,7 +50,7 @@
               </div>
             </div>
           </a>
-          <a href="project3.html" class="tegel-3">
+          <a href="project3.php" class="tegel-3">
             <div class="tegel">
               <img src="img-and-mp4/placeholder-project-tegel.png" alt="">
               <div class="column-text">
@@ -57,7 +59,7 @@
               </div>
             </div>
           </a>
-          <a href="project4.html" class="tegel-4">
+          <a href="project4.php" class="tegel-4">
             <div class="tegel">
               <img src="img-and-mp4/placeholder-project-tegel.png" alt="">
               <div class="column-text">
@@ -66,7 +68,7 @@
               </div>
             </div>
           </a>
-          <a href="project5.html" class="tegel-5">
+          <a href="project5.php" class="tegel-5">
             <div class="tegel">
               <img src="img-and-mp4/placeholder-project-tegel.png" alt="">
               <div class="column-text">
@@ -75,7 +77,7 @@
               </div>
             </div>
           </a>
-          <a href="project6.html" class="tegel-6">
+          <a href="project6.php" class="tegel-6">
             <div class="tegel">
               <img src="img-and-mp4/placeholder-project-tegel.png" alt="">
               <div class="column-text">
@@ -85,7 +87,7 @@
             </div>
           </a>
         </div>
-        <p><a class="btn" href="index.html">home</a></p>     
+        <p><a class="btn" href="index.php">home</a></p>     
         <footer>
           <div class="footer-row">
             <div class="footer-1">
@@ -112,5 +114,6 @@
           </div>
           <p>Copyright &copy; 2024 R. Laffeber BV and YTG Inc.</p>
       </footer>
+      <script src="portfolio.js"></script>
     </body>
 </html>

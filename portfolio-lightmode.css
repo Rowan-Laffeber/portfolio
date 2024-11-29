@@ -1,0 +1,107 @@
+body{
+  background-color: rgb(255, 255, 255);
+}
+
+div.table-box{
+  background-color: rgb(238, 238, 238);
+  border: 1px solid rgb(255, 255, 255);
+}
+div.table-box h2{
+  color: rgb(0, 0, 0);
+}
+table, th, td{
+  border: 1px solid rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
+}
+
+a.btn{
+  border: 1px solid rgb(255, 255, 255);
+  background-color: rgb(155, 155, 155);
+  color: rgb(0, 0, 0);
+  }
+a.btn:hover{
+  background-color: rgb(204, 204, 204);
+}
+nav ul{
+    background-color: rgb(204, 204, 204);
+    border: 1px solid rgb(255, 255, 255);
+  } 
+nav ul li{
+    border-right: 1px solid rgb(155, 155, 155);
+  }
+nav ul li a{
+    color: rgb(0, 0, 0);
+  }
+nav ul li ul.dropdown{
+    background-color: rgb(204, 204, 204);
+  }
+nav ul li a:hover{
+    background-color: rgb(238, 238, 238);
+    }
+.active{
+    background-color: rgb(238, 238, 238);
+  }
+footer{
+  background-color: rgb(204, 204, 204);
+  border: 1px solid rgb(255, 255, 255);
+}
+footer h2, footer p{
+  color: rgb(0, 0, 0)
+}
+div.tegel{
+background-color: rgb(204, 204, 204);
+border: 1px solid rgb(255, 255, 255);
+}
+div.tegel:hover{
+  background-color: rgb(238, 238, 238);
+}
+a{
+  color: rgb(0, 0, 0);
+}
+.article-page{
+background-color: rgb(204, 204, 204);
+border: 1px solid rgb(255, 255, 255);
+}
+.article-grid{
+  color: rgb(0, 0, 0);
+}
+form{
+  background-color: rgb(204, 204, 204);
+  border: 1px solid rgb(255, 255, 255);
+}
+form label{
+  color: rgb(0, 0, 0);
+}
+.submit-contact{
+  background-color: rgb(204, 204, 204);
+  border: 1px solid rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+.grid-abme{
+  background-color: rgb(204, 204, 204);
+  border: 1px solid rgb(255, 255, 255);
+}
+.article-abme{
+  color: rgb(0, 0, 0);
+}
+/* cookies */
+.cookies{
+  background-color: rgb(204, 204, 204);
+  border: 1px solid rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+.cookies h1{
+  color: rgb(0, 0, 0);
+}
+.cookies button{
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+/* light mode area from here */
+nav ul li.lightmode{
+  border-left: 1px solid rgb(155, 155, 155);
+}
+nav ul li button.lightmode{
+  background-color: rgb(155, 155, 155);
+  color: black;
+}

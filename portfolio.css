@@ -2,7 +2,6 @@ html{
   scroll-behavior: smooth;
 }
 body{
-  background-color: rgb(220, 90, 90);
   margin: 4em 0em 0em 0em;
   padding: 0;
   min-height: 100vh;
@@ -24,18 +23,11 @@ div.table-box{
   margin: 1em auto;
   width: fit-content;
   height: fit-content;
-  background-color: rgb(17, 17, 17);
-  border: 1px solid black;
   border-radius: 1em;
 }
-div.table-box h2{
-  color: white;
-}
 table, th, td{
-  border: 1px solid rgb(255, 255, 255);
   border-collapse: collapse;
   padding: 0.25em;
-  color: white;
 }
 
 img {
@@ -59,16 +51,9 @@ a.btn{
   display: inline-block;
   padding: 1em 2em;
   margin: 1em;
-  border: 1px solid black;
   border-radius: 1.5em;
-  background-color: rgb(100, 100, 100);
   font-size: 1em;
-  color: white;
   }
-a.btn:hover{
-  background-color: rgb(51, 51, 51);
-}
-
 video{
   margin-bottom: 1em;
 }
@@ -76,8 +61,6 @@ nav ul{
   display: flex;
   flex-direction: row;
     list-style: none;
-    background-color: rgb(51, 51, 51);
-    border: 1px solid rgb(0, 0, 0);
     margin: 0;
     padding: 0;
     width: 100%;
@@ -87,14 +70,12 @@ nav ul{
   
 nav ul li{
     position: relative;
-    border-right: 1px solid rgb(100, 100, 100);
     float: left;
   }
 nav ul li a{
     display: flex;
     flex-direction: row;
     padding: 0.7em 0.8em;
-    color: white;
     text-decoration: none;
     text-align: center;
     font-size: 1.25em;
@@ -104,32 +85,20 @@ nav ul li ul.dropdown li{
   }
 nav ul li ul.dropdown{
     width: 100%;
-    background-color: rgb(51, 51, 51);
     position: absolute;
     z-index: 1;
     display: none;
     margin-top: 3.125em;
   }
-nav ul li a:hover{
-    background-color: rgb(17, 17, 17);
-    }
 nav ul li:hover ul.dropdown{
     display: block;
   }
-.active{
-    background-color: rgb(110, 30, 30);
-  }
 footer{
-  background-color: rgb(51, 51, 51);
   display: block;
-  border: 1px solid black;
   width: 100%;
   position: relative;
   margin-top: auto;
   z-index: 2;
-}
-footer h2, footer p{
-  color: white
 }
 .footer-box{
   display: flex;
@@ -160,12 +129,7 @@ display: flex;
 flex-direction: row;
 width: 18.75em;
 height: 11.25em;
-background-color: rgb(51, 51, 51);
 border-radius: 1.5em;
-border: 1px solid black;
-}
-div.tegel:hover{
-  background-color: rgb(17, 17, 17);
 }
 div.column-text{
   display: flex;
@@ -200,7 +164,6 @@ div.tegels{
 
 a{
   text-decoration: none;
-  color: white;
 }
 
 .article-grid{ grid-area: article-grid;}
@@ -222,16 +185,13 @@ gap: 2em;
 padding: 2em;
 width: 47.5em;
 height: auto;
-background-color: rgb(51, 51, 51);
 border-radius: 1.5em;
-border: 1px solid black;
 margin: 2em auto;
 }
 .article-grid{
   display: flex;
   flex-direction: column;
   max-width: fit-content;
-  color: white;
 }
 .article-page h1, .article-page h2, .article-page h3, .article-page p{
   text-align: left;
@@ -241,17 +201,14 @@ form{
   flex-direction: column;
   width: 31.25em;
   margin: 3em auto;
-  background-color: rgb(51, 51, 51);
   padding: 2em;
   border-radius: 1.5em;
-  border: 1px solid black;
 }
 form input, form textarea{
   padding: 0.3em 0.625em;
   border-radius: 0.3em;
 }
 form label{
-  color: white;
   margin: 1.25em auto 0.25em 0em;
 }
 form input[type=submit]{
@@ -273,11 +230,8 @@ form input{
   justify-content: center;
   flex-direction: column;
   margin: auto auto 3em auto;
-  background-color: rgb(51, 51, 51);
-  border: 1px solid black;
   padding: 2em;
   border-radius: 1.5em;
-  color: white;
 }
 
 .article-abme{grid-area: article-abme;}
@@ -293,27 +247,19 @@ form input{
   padding: 2em;
   width: 55em;
   height: auto;
-  background-color: rgb(51, 51, 51);
   border-radius: 1.5em;
-  border: 1px solid black;
   margin: 2em auto;
-}
-.article-abme{
-  color: white;
 }
 /* cookies */
 .cookies{
   width: 300px;
   height: 300px;
   margin: auto;
-  background-color: rgb(51, 51, 51);
-  border: 1px solid black;
   position: fixed;
   top: 50%;
   margin-top: -150px;
   left: 50%;
   margin-left: -150px;
-  color: white;
   border-radius: 1.5em;
   line-height: 1.25em;
   font-size: 1em;
@@ -321,14 +267,11 @@ form input{
   z-index: 100;
 }
 .cookies h1{
-  color: white;
   line-height: 1.25em;
   font-size: 1.5em;
   padding: 0.3em;
 }
 .cookies button{
-  background-color: black;
-  color: white;
   line-height: 1.25em;
   font-size: 1em;
   padding: 0.3em;
@@ -339,7 +282,6 @@ nav ul li.lightmode{
   align-self: right;
   margin-left: auto;
   margin-right: 1em;
-  border-left: 1px solid rgb(100, 100, 100);
   border-right: none;
   padding-left: 1em;
 }
@@ -348,8 +290,4 @@ nav ul li button.lightmode{
   margin: auto;
   line-height: 1.25em;
   font-size: 1em;
-}
-.light-mode{
-  background-color: rgb(13, 13, 57);
-  color: white;
 }
