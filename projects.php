@@ -57,9 +57,5 @@
             </div>
           </a>
         </div>
-        <p><a class="btn" href="index.php">home</a></p>     
-    <script>
-      var element = document.getElementById("projects");
-      element.classList.add("active");
-    </script>
+        <p><a class="btn" href="index.php">home</a></p>
 <?php include("bottom.php"); ?>

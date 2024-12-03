@@ -11,12 +11,5 @@
             <img class="image-2-grid" src="img-and-mp4/placeholder-project-article.png" alt="" width="150">
             <img class="image-3-grid" src="img-and-mp4/placeholder-project-article.png" alt="" width="150">
         </div>
-        
         <p><a class="btn" href="index.php">home</a><a class="btn" href="projects.php">projecten</a></p>
-    <script>
-      var element = document.getElementById("project6");
-      element.classList.add("active");
-      var element = document.getElementById("projects");
-      element.classList.add("active");
-    </script>
 <?php include("bottom.php"); ?>

@@ -22,8 +22,4 @@
             <img class="image-3-grid" src="img-and-mp4/honeywell.png" alt="honeywell logo" width="150">
         </div>     
         <p><a class="btn" href="index.php">home</a></p>
-    <script>
-      var element = document.getElementById("interview");
-      element.classList.add("active");
-    </script>
 <?php include("bottom.php"); ?>

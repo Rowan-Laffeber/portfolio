@@ -43,8 +43,4 @@
           </div>
         </a>
     </div>
-    <script>
-      var element = document.getElementById("homepage");
-      element.classList.add("active");
-    </script>
 <?php include("bottom.php"); ?>

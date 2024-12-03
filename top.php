@@ -9,23 +9,24 @@
     <link id="color_mode" rel="stylesheet" href="portfolio-darkmode.css">
   </head>
   <body>
+    <?php    $url =  $_SERVER['REQUEST_URI'];?>
     <nav>
       <ul>
-        <li id="homepage"><a href="index.php">Home</a></li>
-        <li id="aboutme"><a href="portfolio.php">About me</a></li>
-        <li id="projects">
+        <li <?php if ($url === '/portfolio/index.php'){ echo "class='active'";} ?>><a  href="index.php">Home</a></li>
+        <li <?php if ($url === '/portfolio/portfolio.php'){ echo "class='active'";} ?>><a href="portfolio.php">About me</a></li>
+        <li <?php if ($url === '/portfolio/projects.php'){ echo "class='active'";} ?>>
           <a href="projects.php">Projecten</a>
           <ul class="dropdown">
-            <li id="project1"><a href="project1.php">Project 1</a></li>
-            <li id="project2"><a href="project2.php">Project 2</a></li>
-            <li id="project3"><a href="project3.php">Project 3</a></li>
-            <li id="project4"><a href="project4.php">Project 4</a></li>
-            <li id="project5"><a href="project5.php">Project 5</a></li>
-            <li id="project6"><a href="project6.php">Project 6</a></li>
+            <li <?php if ($url === '/portfolio/project1.php'){ echo "class='active'";} ?>><a href="project1.php">Project 1</a></li>
+            <li <?php if ($url === '/portfolio/project2.php'){ echo "class='active'";} ?>><a href="project2.php">Project 2</a></li>
+            <li <?php if ($url === '/portfolio/project3.php'){ echo "class='active'";} ?>><a href="project3.php">Project 3</a></li>
+            <li <?php if ($url === '/portfolio/project4.php'){ echo "class='active'";} ?>><a href="project4.php">Project 4</a></li>
+            <li <?php if ($url === '/portfolio/project5.php'){ echo "class='active'";} ?>><a href="project5.php">Project 5</a></li>
+            <li <?php if ($url === '/portfolio/project6.php'){ echo "class='active'";} ?>><a href="project6.php">Project 6</a></li>
           </ul>
         </li>
-        <li id="interview"><a href="interview.php">Interview</a></li>
-        <li id="contact"><a href="contact.php">Contact</a></li>
+        <li <?php if ($url === '/portfolio/interview.php'){ echo "class='active'";} ?>><a href="interview.php">Interview</a></li>
+        <li <?php if ($url === '/portfolio/contact.php'){ echo "class='active'";} ?>><a href="contact.php">Contact</a></li> 
         <li class="lightmode"><button onclick="trigger_light_mode()" class="lightmode" id="light_mode">light mode</button></li>
       </ul>
     </nav>

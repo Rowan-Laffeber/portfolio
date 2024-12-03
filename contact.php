@@ -16,8 +16,4 @@
                 <textarea id="Message" name="Message" placeholder="Message" required spellcheck="true"></textarea>
             <input type="submit" name="submit" id="submit">
         </form>
-    <script>
-      var element = document.getElementById("contact");
-      element.classList.add("active");
-    </script>
 <?php include("bottom.php"); ?>

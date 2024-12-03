@@ -50,8 +50,4 @@
             </video>
           </div>
           <p><a class="btn" href="index.php">home</a></p>
-    <script>
-      var element = document.getElementById("aboutme");
-      element.classList.add("active");
-    </script>
 <?php include("bottom.php"); ?>
