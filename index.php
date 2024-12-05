@@ -2,7 +2,7 @@
     <img class="pfp" src="img-and-mp4/pfp.png" alt="Profielfoto Rowan Laffeber" width="250">
       <article>
         <h1>Rowan Laffeber</h1>
-        <h2>Welkom op mijn portfolio website</h2>
+        <h2 id="time-greet">Welkom op mijn portfolio website</h2>
         <h2>Belangrijke links</h2>
       </article>
       <div class="tegels">

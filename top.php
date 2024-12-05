@@ -27,6 +27,6 @@
         </li>
         <li <?php if ($url === '/portfolio/interview.php'){ echo "class='active'";} ?>><a href="interview.php">Interview</a></li>
         <li <?php if ($url === '/portfolio/contact.php'){ echo "class='active'";} ?>><a href="contact.php">Contact</a></li> 
-        <li class="lightmode"><button onclick="trigger_light_mode()" class="lightmode" id="light_mode">light mode</button></li>
+        <li class="lightmode"><button id="switch_color_mode" class="lightmode" id="light_mode">light mode</button></li>
       </ul>
     </nav>
