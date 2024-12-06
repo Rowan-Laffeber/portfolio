@@ -5,7 +5,7 @@
       <button onclick="toggle_cookiewall()">nee</button>
     </div>
     <footer>
-    <div class="footer-row">
+    <div class="footer-direction">
       <div class="footer-1">
         <h2>Socials</h2>
         <address class="footer-box">

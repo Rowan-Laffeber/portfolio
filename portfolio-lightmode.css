@@ -22,7 +22,32 @@ a.btn{
 a.btn:hover{
   background-color: rgb(204, 204, 204);
 }
-nav{
+nav.mobile-nav{
+  ul{
+    background-color: rgb(204, 204, 204);
+    border: 1px solid rgb(255, 255, 255);
+  } 
+ ul li{
+    border-bottom: 1px solid rgb(155, 155, 155);
+  }
+ ul li a{
+    color: rgb(27, 27, 27);
+  }
+ ul li ul.dropdown{
+    background-color: rgb(204, 204, 204);
+  }
+ ul li a:hover{
+    background-color: rgb(238, 238, 238);
+    }
+  ul li button.switch_color_mode{
+    background-color: rgb(155, 155, 155);
+    color: black;
+  }
+  ul li.switch_color_mode{
+    border-top: 1px solid rgb(155, 155, 155);
+  }
+}
+nav.desktop-nav{
   ul{
     background-color: rgb(204, 204, 204);
     border: 1px solid rgb(255, 255, 255);
@@ -39,11 +64,11 @@ nav{
  ul li a:hover{
     background-color: rgb(238, 238, 238);
     }
-  ul li button.lightmode{
+  ul li button.switch_color_mode{
     background-color: rgb(155, 155, 155);
     color: black;
   }
-  ul li.lightmode{
+  ul li.switch_color_mode{
     border-left: 1px solid rgb(155, 155, 155);
   }
 }

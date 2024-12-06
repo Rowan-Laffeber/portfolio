@@ -3,18 +3,18 @@ function toggle_cookiewall(){
     console.log("Cookie wall weggeclicked", "true");
     document.getElementById("cookies").style.display = "none";
 }
-/*
-function check_cookie_wall(){
-    let cookies = localStorage.getItem("Cookie wall weggeclicked");
-    var x document.getElementById("cookies")
-    if (cookies === "true"){
-        .style.display = "none";
-    }
-}
-*/
+
+// function check_cookie_wall(){
+//     let cookies = localStorage.getItem("Cookie wall weggeclicked");
+//     var x document.getElementById("cookies")
+//     if (cookies === "true"){
+        // .style.display = "none";
+//     }
+// }
+
 
 checkdarkmode()
-document.getElementById("switch_color_mode").addEventListener("click", switch_color_mode);
+document.getElementById("switch_color_mode" || "switch_color_mode_mobile").addEventListener("click", switch_color_mode);
 function switch_color_mode(){
     var x = document.getElementById("color_mode")
     if(x.href.includes("portfolio-darkmode.css")){

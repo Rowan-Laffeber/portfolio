@@ -88,7 +88,7 @@ nav.desktop-nav{
           text-align: center;
           font-size: 1.25em;
         }
-        button.lightmode{
+        button.switch_color_mode{
           padding: 0;
           margin: auto;
           line-height: 1.25em;
@@ -100,7 +100,7 @@ nav.desktop-nav{
           display: block;
         }
       }
-      li.lightmode{
+      li.switch_color_mode{
         display: flex;
         align-self: right;
         margin-left: auto;
@@ -110,34 +110,65 @@ nav.desktop-nav{
       }
     }
 }
-/* --------
-@media screen and (min-width: 700px) {
-  .mobile-nav {
-      display: none;
-  }
-
-  .desktop-nav{
-      display: block;
-  }
-} */
-
-.hamburger-menu{
-  position: absolute;
-  right: 10px;
+nav.mobile-nav{
+  ul.top-nav-mobile{
+    display: flex;
+    flex-direction: row;
+      list-style: none;
+      margin: 0px;
+      padding: 0;
+      width: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      li{
+        position: relative;
+        float: left;
+      }
+    }
+  ul.hamburger-nav{
+    display: flex;
+    flex-direction: column;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      position: fixed;
+      top: 50px;
+      li{
+        position: relative;
+        float: left;
+        a{
+          display: flex;
+          flex-direction: row;
+          padding: 0.7em 0.8em;
+          text-decoration: none;
+          text-align: center;
+          font-size: 1.25em;
+        }
+      }
+      li.switch_color_mode{
+        display: flex;
+        align-self: right;
+        margin-left: auto;
+        margin-right: 1em;
+        border-right: none;
+        padding-left: 1em;
+      }
+    }
 }
-
 .mobile-nav{
-  display: none;
+  display: none
 }
-
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
   .desktop-nav {
       display: none;
   }
 
   .mobile-nav{
       display: block;
-      margin-left: -150px;
+      margin-left: -800px;
       transition: all 500ms;
   }
 
@@ -145,8 +176,10 @@ nav.desktop-nav{
       margin-left: 0;
       transition: all 500ms;
   }
+  footer div.footer-direction{
+    flex-direction: column;
+  }
 }
-----------
 
 footer{
   display: block;
@@ -158,6 +191,7 @@ footer{
 .footer-box{
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 .footer-box a img, .footer-box img{
   margin: 1em;
@@ -168,7 +202,7 @@ footer{
   display: flex;
   flex-direction: column;
 }
-.footer-row{
+.footer-direction{
   display: flex;
   justify-content: space-around;
   flex-direction: row;

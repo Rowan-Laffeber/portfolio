@@ -27,16 +27,19 @@
         </li>
         <li <?php if ($url === '/portfolio/interview.php'){ echo "class='active'";} ?>><a href="interview.php">Interview</a></li>
         <li <?php if ($url === '/portfolio/contact.php'){ echo "class='active'";} ?>><a href="contact.php">Contact</a></li> 
-        <li class="lightmode"><button id="switch_color_mode" class="lightmode">light mode</button></li>
+        <li class="switch_color_mode"><button id="switch_color_mode" class="switch_color_mode">light mode</button></li>
       </ul>
     </nav>  
     <nav class="mobile-nav" id="mobile-nav">
-      <ul>
-        <li><a href="#">link mobile</a></li>
-        <li><a href="#">link</a></li>
-        <li><a href="#">link</a></li>
-        <li><a href="#">link</a></li>
-        <li><a href="#">link</a></li>
-        <button class="hamburger-menu" onclick="toggleMenu()">Hamburger</button>  
+      <ul class="top-nav-mobile">
+        <li><button id="switch_color_mode_mobile" class="switch_color_mode">light mode</button></li>
+        <li><button class="hamburger-menu" onclick="toggleMenu()">Hamburger</button></li>
+      </ul>
+      <ul class="hamburger-nav">
+        <li <?php if ($url === '/portfolio/index.php'){ echo "class='active'";} ?>><a  href="index.php">Home</a></li>
+        <li <?php if ($url === '/portfolio/portfolio.php'){ echo "class='active'";} ?>><a href="portfolio.php">About me</a></li>
+        <li <?php if ($url === '/portfolio/projects.php'){ echo "class='active'";} ?>><a href="projects.php">Projecten</a></li>
+        <li <?php if ($url === '/portfolio/interview.php'){ echo "class='active'";} ?>><a href="interview.php">Interview</a></li>
+        <li <?php if ($url === '/portfolio/contact.php'){ echo "class='active'";} ?>><a href="contact.php">Contact</a></li> 
       </ul>
     </nav>
