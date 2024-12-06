@@ -57,42 +57,97 @@ a.btn{
 video{
   margin-bottom: 1em;
 }
-nav ul{
-  display: flex;
-  flex-direction: row;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    position: fixed;
-    top: 0;
-  }
-  
-nav ul li{
-    position: relative;
-    float: left;
-  }
-nav ul li a{
+nav.desktop-nav{
+  ul{
     display: flex;
     flex-direction: row;
-    padding: 0.7em 0.8em;
-    text-decoration: none;
-    text-align: center;
-    font-size: 1.25em;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      position: fixed;
+      top: 0;
+      li{
+        position: relative;
+        float: left;
+        ul.dropdown{
+          width: 100%;
+          position: absolute;
+          z-index: 1;
+          display: none;
+          margin-top: 3.125em;
+          li{
+            display: block;
+          }
+        }
+        a{
+          display: flex;
+          flex-direction: row;
+          padding: 0.7em 0.8em;
+          text-decoration: none;
+          text-align: center;
+          font-size: 1.25em;
+        }
+        button.lightmode{
+          padding: 0;
+          margin: auto;
+          line-height: 1.25em;
+          font-size: 1em;
+        }
+      }
+      li:hover{
+        ul.dropdown{
+          display: block;
+        }
+      }
+      li.lightmode{
+        display: flex;
+        align-self: right;
+        margin-left: auto;
+        margin-right: 1em;
+        border-right: none;
+        padding-left: 1em;
+      }
+    }
+}
+/* --------
+@media screen and (min-width: 700px) {
+  .mobile-nav {
+      display: none;
   }
-nav ul li ul.dropdown li{
-    display: block;
+
+  .desktop-nav{
+      display: block;
   }
-nav ul li ul.dropdown{
-    width: 100%;
-    position: absolute;
-    z-index: 1;
-    display: none;
-    margin-top: 3.125em;
+} */
+
+.hamburger-menu{
+  position: absolute;
+  right: 10px;
+}
+
+.mobile-nav{
+  display: none;
+}
+
+@media screen and (max-width: 700px) {
+  .desktop-nav {
+      display: none;
   }
-nav ul li:hover ul.dropdown{
-    display: block;
+
+  .mobile-nav{
+      display: block;
+      margin-left: -150px;
+      transition: all 500ms;
   }
+
+  .show-mobile-nav{
+      margin-left: 0;
+      transition: all 500ms;
+  }
+}
+----------
+
 footer{
   display: block;
   width: 100%;
@@ -250,7 +305,6 @@ form input{
   border-radius: 1.5em;
   margin: 2em auto;
 }
-/* cookies */
 .cookies{
   width: 300px;
   height: 300px;
@@ -276,18 +330,4 @@ form input{
   font-size: 1em;
   padding: 0.3em;
 }
-/* light mode area from here */
-nav ul li.lightmode{
-  display: flex;
-  align-self: right;
-  margin-left: auto;
-  margin-right: 1em;
-  border-right: none;
-  padding-left: 1em;
-}
-nav ul li button.lightmode{
-  padding: 0;
-  margin: auto;
-  line-height: 1.25em;
-  font-size: 1em;
-}
+

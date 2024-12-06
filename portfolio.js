@@ -1,7 +1,18 @@
+// check_cookie_wall()
 function toggle_cookiewall(){
-    console.log("Cookie wall geclicked");
+    console.log("Cookie wall weggeclicked", "true");
     document.getElementById("cookies").style.display = "none";
 }
+/*
+function check_cookie_wall(){
+    let cookies = localStorage.getItem("Cookie wall weggeclicked");
+    var x document.getElementById("cookies")
+    if (cookies === "true"){
+        .style.display = "none";
+    }
+}
+*/
+
 checkdarkmode()
 document.getElementById("switch_color_mode").addEventListener("click", switch_color_mode);
 function switch_color_mode(){
@@ -27,9 +38,9 @@ function checkdarkmode(){
         x.href = "portfolio-lightmode.css";
     }
 }
-    var today = new Date()
-    var curHr = today.getHours()
 
+var today = new Date()
+var curHr = today.getHours()
     if (curHr >= 0 && curHr < 6) {
         document.getElementById("time-greet").innerHTML = 'goedenacht, welkom op mijn portfolio website';
     } else if (curHr >= 6 && curHr <= 12) {
@@ -39,3 +50,6 @@ function checkdarkmode(){
     } else {
         document.getElementById("time-greet").innerHTML = 'Goedenavond, welkom op mijn portfolio website';
     }
+    function toggleMenu() {
+        document.getElementById("mobile-nav").classList.toggle("show-mobile-nav");
+      }

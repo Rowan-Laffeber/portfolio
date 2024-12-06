@@ -22,22 +22,31 @@ a.btn{
 a.btn:hover{
   background-color: rgb(51, 51, 51);
 }
-nav ul{
+nav{
+ ul{
     background-color: rgb(51, 51, 51);
     border: 1px solid rgb(0, 0, 0);
   } 
-nav ul li{
+ ul li{
     border-right: 1px solid rgb(100, 100, 100);
   }
-nav ul li a{
+ ul li a{
     color: white;
   }
-nav ul li ul.dropdown{
+ ul li ul.dropdown{
     background-color: rgb(51, 51, 51);
   }
-nav ul li a:hover{
+ ul li a:hover{
     background-color: rgb(17, 17, 17);
-    }
+  }
+ul li button.lightmode{
+    background-color: rgb(155, 155, 155);
+    color: black;
+  }
+  ul li.lightmode{
+    border-left: 1px solid rgb(100, 100, 100);
+  }
+}
 .active{
     background-color: rgb(110, 30, 30);
   }
@@ -96,12 +105,4 @@ form label{
 .cookies button{
   background-color: black;
   color: white;
-}
-/* light mode area from here */
-nav ul li.lightmode{
-  border-left: 1px solid rgb(100, 100, 100);
-}
-nav ul li button.lightmode{
-  background-color: rgb(155, 155, 155);
-  color: black;
 }
