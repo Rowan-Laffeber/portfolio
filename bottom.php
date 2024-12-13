@@ -1,8 +1,8 @@
 <div class="cookies" id="cookies">
       <h1>Wilt u cookies gebruiken?</h1>
       <p>bij het gebruik van cookies heeft u gepersonaliseerde advertenties, en verdien ik geld aan het verkopen van uw gegevens</p>
-      <button onclick="toggle_cookiewall()">ja</button>
-      <button onclick="toggle_cookiewall()">nee</button>
+      <button id="toggle_cookiewall_yes">ja</button>
+      <button id="toggle_cookiewall_no">nee</button>
     </div>
     <footer>
     <div class="footer-direction">

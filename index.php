@@ -2,7 +2,10 @@
     <img class="pfp" src="img-and-mp4/pfp.png" alt="Profielfoto Rowan Laffeber" width="250">
       <article>
         <h1>Rowan Laffeber</h1>
-        <h2 id="time-greet"></h2>
+        <h3 id="time-greet"></h3>
+        <h2>Aankomende evenementen</h2>
+        <h3 class="countdown" id="countdown1">countdown vuurwerk</h3>
+        <h3 class="countdown" id="countdown2">teller 10s</h3>
         <h2>Belangrijke links</h2>
       </article>
       <div class="tegels">

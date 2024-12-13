@@ -1,3 +1,6 @@
+*{  
+  box-sizing: border-box;
+}
 html{
   scroll-behavior: smooth;
 }
@@ -7,6 +10,7 @@ body{
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  max-width: 100%;
 }
 
 
@@ -23,7 +27,7 @@ div.table-box{
   margin: 1em auto;
   width: fit-content;
   height: fit-content;
-  border-radius: 1em;
+  border-radius: 0.5em;
 }
 table, th, td{
   border-collapse: collapse;
@@ -41,10 +45,8 @@ video {
     margin-right: auto;
   }
 .pfp{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    
+    display: flex;
+    justify-content: center;
     border-radius: 50%;
   } 
 a.btn{
@@ -55,7 +57,7 @@ a.btn{
   font-size: 1em;
   }
 video{
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
 }
 nav.desktop-nav{
   ul{
@@ -195,7 +197,7 @@ footer{
 }
 .footer-box a img, .footer-box img{
   margin: 1em;
-  border-radius: 1em;
+  border-radius: 0.5em;
 }
 
 .footer-1, .footer-2, .footer-3{
@@ -218,7 +220,7 @@ display: flex;
 flex-direction: row;
 width: 18.75em;
 height: 11.25em;
-border-radius: 1.5em;
+border-radius: 0.75em;
 }
 div.column-text{
   display: flex;
@@ -261,7 +263,7 @@ a{
 .image-3-grid{grid-area: image-3-grid;}
 
 .image-1-grid, .image-2-grid, .image-3-grid{
-  border-radius: 1em;
+  border-radius: 0.5em;
 }
 
 .article-page{
@@ -274,7 +276,7 @@ gap: 2em;
 padding: 2em;
 width: 47.5em;
 height: auto;
-border-radius: 1.5em;
+border-radius: 0.75em;
 margin: 2em auto;
 }
 .article-grid{
@@ -291,7 +293,7 @@ form{
   width: 31.25em;
   margin: 3em auto;
   padding: 2em;
-  border-radius: 1.5em;
+  border-radius: 0.75em;
 }
 form input, form textarea{
   padding: 0.3em 0.625em;
@@ -320,7 +322,7 @@ form input{
   flex-direction: column;
   margin: auto auto 3em auto;
   padding: 2em;
-  border-radius: 1.5em;
+  border-radius: 0.75em;
 }
 
 .article-abme{grid-area: article-abme;}
@@ -336,7 +338,7 @@ form input{
   padding: 2em;
   width: 55em;
   height: auto;
-  border-radius: 1.5em;
+  border-radius: 0.75em;
   margin: 2em auto;
 }
 .cookies{
@@ -348,7 +350,7 @@ form input{
   margin-top: -150px;
   left: 50%;
   margin-left: -150px;
-  border-radius: 1.5em;
+  border-radius: 0.75em;
   line-height: 1.25em;
   font-size: 1em;
   padding: 0.3em;
