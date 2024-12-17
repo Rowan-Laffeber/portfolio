@@ -1,4 +1,4 @@
-<?php include("top.php"); ?>
+<?php include("partials/top.php"); ?>
         <div class="article-page">
             <article class="article-grid">
                 <h1>Interview met medestudent</h1>
@@ -17,9 +17,9 @@
                 <h3>Zou je graag zelf een bedrijf willen opstarten?</h3>
                 <p>nee, ik vind het leuk om te werken voor een groot bedrijf. misschien later als bijbaan</p>
             </article>
-            <img class="image-1-grid" src="img-and-mp4/scrubdaddy.png" alt="Profielfoto Nojan" width="150">
-            <img class="image-2-grid" src="img-and-mp4/servicenowlogo.png" alt="servivenow logo" width="150">
-            <img class="image-3-grid" src="img-and-mp4/honeywell.png" alt="honeywell logo" width="150">
+            <img class="image-1-grid" src="./assets/img-and-mp4/scrubdaddy.png" alt="Profielfoto Nojan" width="150">
+            <img class="image-2-grid" src="./assets/img-and-mp4/servicenowlogo.png" alt="servivenow logo" width="150">
+            <img class="image-3-grid" src="./assets/img-and-mp4/honeywell.png" alt="honeywell logo" width="150">
         </div>     
         <p><a class="btn" href="index.php">home</a></p>
-<?php include("bottom.php"); ?>
+<?php include("partials/bottom.php"); ?>

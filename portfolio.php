@@ -1,5 +1,5 @@
-<?php include("top.php"); ?>
-        <img class="pfp" src="img-and-mp4/pfp.png" alt="Profielfoto Rowan Laffeber" width="250">
+<?php include("partials/top.php"); ?>
+        <img class="pfp" src="./assets/img-and-mp4/pfp.png" alt="Profielfoto Rowan Laffeber" width="250">
         <div class="grid-abme">
           <div class="article-abme">
           <h1>hallo, ik ben Rowan Laffeber, dit is mijn portfolio</h1>
@@ -46,8 +46,8 @@
               </TABLE>
             </div>
             <video class="vid-abme" width="320" height="240" controls>
-              <source src="img-and-mp4/alottadamage.mp4" type="video/mp4">
+              <source src="./assets/img-and-mp4/alottadamage.mp4" type="video/mp4">
             </video>
           </div>
           <p><a class="btn" href="index.php">home</a></p>
-<?php include("bottom.php"); ?>
+<?php include("partials/bottom.php"); ?>

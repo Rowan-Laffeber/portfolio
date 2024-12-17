@@ -1,4 +1,4 @@
-<?php include("top.php"); ?>
+<?php include("partials/top.php"); ?>
         <h1>Contact</h1>
         <h2>Neem contact met mij op via onderstaand formulier of the socials in the footer.</h2>
         <form action="submitted.php" method="post">
@@ -16,4 +16,4 @@
                 <textarea id="Message" name="Message" placeholder="Message" required spellcheck="true"></textarea>
             <input type="submit" name="submit" id="submit">
         </form>
-<?php include("bottom.php"); ?>
+<?php include("partials/bottom.php"); ?>

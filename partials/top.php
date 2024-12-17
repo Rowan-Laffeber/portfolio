@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rowan Laffeber</title>
-    <link rel="stylesheet" href="portfolio.css">
-    <link id="color_mode" rel="stylesheet" href="portfolio-darkmode.css">
+    <link rel="stylesheet" href="assets/portfolio.css">
+    <link id="color_mode" rel="stylesheet" href="assets/portfolio-darkmode.css">
   </head>
   <body>
     <?php    $url =  $_SERVER['REQUEST_URI'];?>
@@ -27,12 +27,12 @@
         </li>
         <li <?php if ($url === '/portfolio/interview.php'){ echo "class='active'";} ?>><a href="interview.php">Interview</a></li>
         <li <?php if ($url === '/portfolio/contact.php'){ echo "class='active'";} ?>><a href="contact.php">Contact</a></li> 
-        <li class="switch_color_mode"><button id="switch_color_mode" class="switch_color_mode">light mode</button></li>
+        <li class="switch_color_mode"><button id="switch_color_mode" class="switch_color_mode">colormode-switch</button></li>
       </ul>
     </nav>  
     <nav class="mobile-nav" id="mobile-nav">
       <ul class="top-nav-mobile">
-        <li><button id="switch_color_mode_mobile" class="switch_color_mode">light mode</button></li>
+        <li><button id="switch_color_mode_mobile" class="switch_color_mode">colormode-switch</button></li>
         <li><button class="hamburger-menu" onclick="toggleMenu()">Hamburger</button></li>
       </ul>
       <ul class="hamburger-nav">

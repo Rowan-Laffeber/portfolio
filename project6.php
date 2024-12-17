@@ -1,4 +1,4 @@
-<?php include("top.php"); ?>
+<?php include("partials/top.php"); ?>
         <div class="article-page">
             <article class="article-grid">
                 <h1>Plaats hier project 6</h1>
@@ -7,9 +7,9 @@
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque facere culpa asperiores necessitatibus ratione nobis sint et doloribus consequatur obcaecati, possimus omnis quidem ex saepe incidunt tenetur, cumque, vel soluta?</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus illo architecto voluptas, quasi facere maxime consequatur dolorum harum! Maiores officia dicta suscipit rerum nulla illo consequuntur dolores tempora eligendi molestias.</p>
             </article>
-            <img class="image-1-grid" src="img-and-mp4/placeholder-project-article.png" alt="" width="150">
-            <img class="image-2-grid" src="img-and-mp4/placeholder-project-article.png" alt="" width="150">
-            <img class="image-3-grid" src="img-and-mp4/placeholder-project-article.png" alt="" width="150">
+            <img class="./assets/image-1-grid" src="img-and-mp4/placeholder-project-article.png" alt="" width="150">
+            <img class="./assets/image-2-grid" src="img-and-mp4/placeholder-project-article.png" alt="" width="150">
+            <img class="./assets/image-3-grid" src="img-and-mp4/placeholder-project-article.png" alt="" width="150">
         </div>
         <p><a class="btn" href="index.php">home</a><a class="btn" href="projects.php">projecten</a></p>
-<?php include("bottom.php"); ?>
+<?php include("partials/bottom.php"); ?>
