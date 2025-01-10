@@ -3,7 +3,7 @@
   <head>
     <meta name="description" content="portfolio">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=2.0">
     <title>Rowan Laffeber</title>
     <link rel="stylesheet" href="assets/portfolio.css">
     <link id="color_mode" rel="stylesheet" href="assets/portfolio-darkmode.css">
