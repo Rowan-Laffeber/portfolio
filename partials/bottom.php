@@ -32,7 +32,11 @@
       </div>
       
     </div>
-    <p>Copyright &copy; 2024 R. Laffeber BV and YTG Inc.</p>
+    <p><a href="terms.php">Copyright &copy; 
+      <?php
+        echo date("Y");
+        ?> 
+      R. Laffeber BV and YTG Inc.</a></p>
 </footer>
 <script src="script/portfolio.js"></script>
   </body>
